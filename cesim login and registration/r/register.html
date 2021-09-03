@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html
+    xmlns:wicket="http://git-wip-us.apache.org/repos/asf/wicket/repo?p=wicket.git;a=blob_plain;f=wicket-core/src/main/resources/META-INF/wicket-1.5.xsd;hb=master"
+    xml:lang="en" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#337ab7">
+    <title>Registration | CESIM </title>
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/student/v1/student.css?v=1" />
+    <script type="text/javascript" src="../js/jquery.js?ver=2F6B11A7E914718E0290410E85366FE9"></script>
+    <script type="text/javascript" src="../js/snackbar.min.js"></script>
+    <meta name="wicket.header.items" />
+</head>
+
+<body>
+    <div class="login-register">
+        <div class="login-register__panel">
+            <div class="login-register__register">
+                <h3 class="login-register__header">Do you already have an account?</h3>
+                <a class="button button--medium button--white login-register__button" href="../rl/login.html">Login</a>
+            </div>
+            <div class="login-register__login">
+                <a href="http://www.cesim.com" class="login-register__logo"></a>
+                <div class="login-register__form">
+                    <form id="id10" method="post" action="./?10-2.-form">
+                        <div id="id10_hf_0" hidden="" class="hidden-fields"></div>
+                        <h3 class="login-register__header">New account</h3>
+                        <div class="login-register__name">
+                            <input
+                                class="input-text input-text--medium login-register__input-text login-register__input-name"
+                                type="text" value="" name="firstn" placeholder="First name">
+                            <input
+                                class="input-text input-text--medium login-register__input-text login-register__input-surname"
+                                type="text" value="" name="lastn" placeholder="Last name">
+                        </div>
+                        <input class="input-text input-text--medium login-register__input-text" type="email" value=""
+                            name="email" placeholder="Email">
+                        <div class="login-register__password">
+                            <input class="input-text input-text--medium login-register__input-text" type="password"
+                                id="pw" value="" name="pw" placeholder="Password">
+                            <button class="button--inline button-pw" type="button" id="reveal"></button>
+                        </div>
+                        <input type="hidden" id="tz" value="" name="tz">
+                        <input class="button button--medium login-register__button" type="submit"
+                            value="Create an account" />
+                    </form>
+                </div>
+                <a class="button button--medium button--secondary login-register__button-cancel" href="../">Cancel</a>
+            </div>
+            <div class="login-register__languages">
+                <ul class="languages">
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=az_AZ"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-az_AZ.svg?ver=451284CEDF7277F87440E014C3C11557"
+                                alt="azərbaycan (Azərbaycan)" title="azərbaycan (Azərbaycan)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=hr_HR"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-hr_HR.svg?ver=8F6905AB9A3F09B7AD72E4D6772E2223"
+                                alt="hrvatski (Hrvatska)" title="hrvatski (Hrvatska)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=nl_NL"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-nl_NL.svg?ver=E336D50A0531BB958FA92165C55FF083"
+                                alt="Nederlands (Nederland)" title="Nederlands (Nederland)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=ru_RU"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-ru_RU.svg?ver=0CACF46E6F473FA88781120F370D6107"
+                                alt="русский (Россия)" title="русский (Россия)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=hu_HU"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-hu_HU.svg?ver=0D7409F88BCA8325938E46E3EF672716"
+                                alt="magyar (Magyarország)" title="magyar (Magyarország)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=pt_BR"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-pt_BR.svg?ver=C834CB5B54AADF9673F6CD32F5B163EE"
+                                alt="português (Brasil)" title="português (Brasil)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=mn_MN"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-mn_MN.svg?ver=B44485D718720376A933E7EE46A12A93"
+                                alt="монгол (Монгол)" title="монгол (Монгол)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=de_DE"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-de_DE.svg?ver=3E726C2B6A59E6E4543C0A1534D93796"
+                                alt="Deutsch (Deutschland)" title="Deutsch (Deutschland)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=da_DK"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-da_DK.svg?ver=EB1416E02BAEEE91A39F721E871CAF23"
+                                alt="dansk (Danmark)" title="dansk (Danmark)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=tr_TR"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-tr_TR.svg?ver=ED6D5F37779AF38911B0B7CB2212E30D"
+                                alt="Türkçe (Türkiye)" title="Türkçe (Türkiye)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=pl_PL"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-pl_PL.svg?ver=562EDCA5BB39D66F4C9238A36295187B"
+                                alt="polski (Polska)" title="polski (Polska)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=ca_ES"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-ca_ES.svg?ver=5DAFDBA3968DD28D9AB966816995262E"
+                                alt="català (Espanya)" title="català (Espanya)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=it_IT"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-it_IT.svg?ver=8D15DE04F5F6E8E89CAB4E5EB237F607"
+                                alt="italiano (Italia)" title="italiano (Italia)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=lt_LT"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-lt_LT.svg?ver=C3AEAC0DAD1DFCC917A721A975EA29DD"
+                                alt="lietuvių (Lietuva)" title="lietuvių (Lietuva)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=pt_PT"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-pt_PT.svg?ver=C31A6C496E2C66DEF3F6DD80AC80E710"
+                                alt="português (Portugal)" title="português (Portugal)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=vi_VN"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-vi_VN.svg?ver=A62AD62F354AF546C5D9DF10B183F995"
+                                alt="Tiếng Việt (Việt Nam)" title="Tiếng Việt (Việt Nam)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=es_ES"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-es_ES.svg?ver=CC1B41B0E9485796CEBB98FB04A7C10E"
+                                alt="español (España)" title="español (España)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=zh_CN"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-zh_CN.svg?ver=02C229DE4D98EA1668384D2ED4CC558D"
+                                alt="中文 (中国)" title="中文 (中国)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=bg_BG"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-bg_BG.svg?ver=3D762564B2BE000F52CA9038E8F42AD4"
+                                alt="български (България)" title="български (България)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=ar"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-ar.svg?ver=B98C75D08FD7C77E7771138043DB2719"
+                                alt="العربية" title="العربية" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=sr_RS"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-sr_RS.svg?ver=0B9D64B2F235138BD7DA1187D40B8EB3"
+                                alt="српски (Србија)" title="српски (Србија)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=en_EN"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-en_EN.svg?ver=4F1B7AF5C0BAE6AAE85C3E7BA9401A85"
+                                alt="English (EN)" title="English (EN)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=fi_FI"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-fi_FI.svg?ver=2649533E1D44A2EF75D5679EF6839B9E"
+                                alt="suomi (Suomi)" title="suomi (Suomi)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=fr_FR"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-fr_FR.svg?ver=B1156355DE9691D768DF19A8A2B44DA4"
+                                alt="français (France)" title="français (France)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=in_ID"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-in_ID.svg?ver=E17C8F324750CCCFD72E861E35FF1FA1"
+                                alt="Bahasa Indonesia (Indonesia)" title="Bahasa Indonesia (Indonesia)" /></a>
+                    </li>
+                    <li class="flag">
+                        <a class="language flag__link" href="./?locale=ro_RO"><img class="flag__img"
+                                src="../wicket/resource/com.cesim.web.common.LocaleFlagImage/images/flag-ro_RO.svg?ver=625ACA9E928C0EB9F463099945B9B115"
+                                alt="română (România)" title="română (România)" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="login-register__instructor"><a href="mailto:contact@cesim.com">If you are an instructor and would
+                like to register, please click here.</a></div>
+    </div>
+    <script>
+        /*<![CDATA[*/
+
+        var passwordInput = document.getElementById('pw'),
+            toggle = document.getElementById('reveal');
+        function togglePassword() {
+            toggle.classList.toggle('button-pw--show');
+            if (passwordInput.type === 'password')
+                passwordInput.type = 'text';
+            else
+                passwordInput.type = 'password';
+            return false;
+        }
+        toggle.addEventListener('click', togglePassword, false);
+        document.getElementById('tz').value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        /*]]>*/
+    </script>
+</body>
+
+</html>
